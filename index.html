@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Responsive Travel website</title>
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
@@ -143,50 +144,130 @@
       </div>
     </div>
   </section>
-
-  <section class="section__container trip__container" id="trip">
-    <div class="trip__image">
-      <img src="assets/trip.jpeg" alt="trip" />
+  <div
+    class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-16 gap-12 md:gap-24 relative overflow-visible">
+    <!-- Left side text and steps -->
+    <div class="flex flex-col max-w-xl w-full text-left text-[#2e2e4a]">
+      <p class="text-sm font-normal mb-2">
+        Easy and Fast
+      </p>
+      <h1 class="font-extrabold text-[2.75rem] leading-[3.5rem] mb-12 text-[#1a1a3d]">
+        Book Your Next Trip
+        <br />
+        In 3 Easy Steps
+      </h1>
+      <div class="flex items-start gap-4 mb-8">
+        <div class="flex-shrink-0 rounded-lg bg-[#f5b800] p-3 flex items-center justify-center">
+          <i class="fas fa-vector-square text-white text-lg">
+          </i>
+        </div>
+        <div>
+          <p class="font-semibold text-[#2e2e4a] mb-1">
+            Choose Destination
+          </p>
+          <p class="text-[#6b6b7d] text-sm max-w-md">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 mb-8">
+        <div class="flex-shrink-0 rounded-lg bg-[#f15a29] p-3 flex items-center justify-center">
+          <i class="fas fa-swimmer text-white text-lg">
+          </i>
+        </div>
+        <div>
+          <p class="font-semibold text-[#2e2e4a] mb-1">
+            Make Payment
+          </p>
+          <p class="text-[#6b6b7d] text-sm max-w-md">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 rounded-lg bg-[#0a7a9a] p-3 flex items-center justify-center">
+          <i class="fas fa-car-side text-white text-lg">
+          </i>
+        </div>
+        <div>
+          <p class="font-semibold text-[#2e2e4a] mb-1">
+            Reach Airport on Selected Date
+          </p>
+          <p class="text-[#6b6b7d] text-sm max-w-md">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="trip__content">
-      <h3 class="section__subheader">EASY & FAST</h3>
-      <h2 class="section__header">Book Your Next Trip In 3 Easy Steps</h2>
-      <ul class="trip__list">
-        <li>
-          <span><i class="ri-signpost-line"></i></span>
-          <div>
-            <h4>Choose Destination</h4>
-            <p>
-              Choose your dream destination from our curated selection of
-              exotic locales, bustling cities, and serene getaways.
-            </p>
-          </div>
-        </li>
-        <li>
-          <span><i class="ri-secure-payment-line"></i></span>
-          <div>
-            <h4>Make Payment</h4>
-            <p>
-              Secure your adventure with ease through our streamlined payment
-              process, ensuring a hassle-free booking experience.
-            </p>
-          </div>
-        </li>
-        <li>
-          <span><i class="ri-flight-takeoff-line"></i></span>
-          <div>
-            <h4>Reach Airport on Selected Date</h4>
-            <p>
-              Prepare for takeoff as you finalize your travel plans, arriving
-              at the airport on your selected date ready to embark on your
-              next unforgettable journey.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- Right side card -->
+    <div class="relative flex flex-col items-end">
+      <div class="bg-white rounded-3xl max-w-sm w-full shadow-[0_0_100px_#0a2a4a] p-6 md:p-8" style="min-width: 320px">
+        <img alt="Woman in red dress walking in Santorini Greece with white buildings and blue domes"
+          class="rounded-xl w-full object-cover mb-4" height="180" src="assets/trip.jpeg" width="400" />
+        <p class="font-semibold text-black text-lg mb-1">
+          Trip To Greece
+        </p>
+        <div class="flex items-center text-gray-400 text-sm mb-4 space-x-2">
+          <span>
+            14–29 June
+          </span>
+          <span class="border-l border-gray-300 h-4">
+          </span>
+          <span>
+            by Robbin joe
+          </span>
+        </div>
+        <div class="flex gap-3 mb-6">
+          <button aria-label="Leaf icon" class="p-2 rounded-full bg-gray-100 text-gray-400 hover:text-gray-600">
+            <i class="fas fa-leaf">
+            </i>
+          </button>
+          <button aria-label="Map icon" class="p-2 rounded-full bg-gray-100 text-gray-400 hover:text-gray-600">
+            <i class="fas fa-map">
+            </i>
+          </button>
+          <button aria-label="Paper plane icon" class="p-2 rounded-full bg-gray-100 text-gray-400 hover:text-gray-600">
+            <i class="fas fa-paper-plane">
+            </i>
+          </button>
+        </div>
+        <div class="flex items-center text-gray-400 text-sm space-x-2">
+          <i class="fas fa-building">
+          </i>
+          <span>
+            24 people going
+          </span>
+          <i class="fa fa-heart" style="font-size: 1.5rem; margin-left: 50%;"></i>
 
+        </div>
+      </div>
+      <!-- Floating card -->
+      <div class="absolute top-1/2
+    top-81% -translate-y-1/2 right-82 right-35% bg-white rounded-xl shadow-lg p-4 w-64 flex items-center gap-4"
+        style="min-width: 256px">
+        <img alt="Icon of a famous building in Rome" class="rounded-full w-12 h-12 object-cover flex-shrink-0"
+          height="48" src="assets/building.png" width="48" />
+        <div class="flex flex-col">
+          <span class="text-xs text-gray-400 mb-1">
+            Ongoing
+          </span>
+          <p class="font-semibold text-black text-base mb-1">
+            Trip to rome
+          </p>
+          <div class="text-sm text-purple-700 mb-1">
+            <span class="text-purple-600 underline cursor-pointer">
+              40%
+            </span>
+            completed
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-1">
+            <div class="bg-purple-600 h-1 rounded-full" style="width: 40%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="section__container client__container" id="client">
     <div class="client__content">
       <h3 class="section__subheader">TESTIMONIALS</h3>
@@ -246,6 +327,113 @@
       </div>
     </div>
   </section>
+  <section>
+    <img src="assets/logos.png" alt="" style="width: 90%; margin: auto; height: 50vh;">
+  </section>
+
+  <div class="relative bg-[#e0e0e0] rounded-[20px] max-w-5xl w-full px-8 py-12 flex flex-col items-center m-auto">
+    <h2
+      class="text-center text-[22px] sm:text-[24px] md:text-[26px] font-semibold text-[#5E5E7E] font-['Inter'] max-w-3xl leading-snug">
+      Subscribe to get information, latest news and other
+      <br class="hidden sm:block" />
+      interesting offers about Jadoo
+    </h2>
+    <form action="#" class="mt-10 flex flex-col sm:flex-row gap-6 w-full max-w-3xl" method="POST">
+      <label class="flex items-center bg-white rounded-lg px-5 py-4 flex-1 max-w-[480px] cursor-text" for="email">
+        <i class="far fa-envelope text-[#5E5E7E] text-lg mr-3">
+        </i>
+        <input class="w-full text-[#5E5E7E] text-sm placeholder-[#5E5E7E] focus:outline-none font-normal" id="email"
+          name="email" placeholder="Your email" required="" type="email" />
+      </label>
+      <button
+        class="bg-gradient-to-r from-[#FF7E5F] to-[#FD3A69] rounded-lg px-8 py-4 text-white text-base font-normal hover:brightness-110 transition"
+        type="submit">
+        Subscribe
+      </button>
+    </form>
+    <!-- Left circles -->
+    <div class="pointer-events-none absolute left-8 top-1/2 -translate-y-1/2">
+      <svg class="opacity-30" fill="none" height="200" viewbox="0 0 200 200" width="200"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="100" cy="100" r="80" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="100" cy="100" r="70" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="100" cy="100" r="60" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="100" cy="100" r="50" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="100" cy="100" r="40" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="100" cy="100" r="30" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+      </svg>
+    </div>
+    <!-- Right circles -->
+    <div class="pointer-events-none absolute right-8 top-12">
+      <svg class="opacity-30" fill="none" height="140" viewbox="0 0 140 140" width="140"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="70" cy="70" r="60" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="70" cy="70" r="50" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="70" cy="70" r="40" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="70" cy="70" r="30" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+        <circle cx="70" cy="70" r="20" stroke="#8B7FF9" stroke-width="1">
+        </circle>
+      </svg>
+    </div>
+    <!-- Top right paper plane circle with arrow -->
+    <div
+      class="absolute top-2 right-2 w-14 h-14 rounded-full bg-gradient-to-tr from-[#5B5BFF] to-[#8B7FF9] flex justify-center items-center shadow-lg">
+      <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <line x1="22" x2="11" y1="2" y2="13">
+        </line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2">
+        </polygon>
+      </svg>
+    </div>
+    <!-- Bottom right plus signs -->
+    <div class="absolute bottom-4 right-4 grid grid-cols-4 gap-2">
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#FD3A69] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#5B5BFF] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+      <div class="w-3 h-3 border border-[#D9D9D9] rounded-sm">
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="section__container footer__container">
@@ -302,6 +490,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Removed main.js as no JS toggle needed -->
+
 </body>
 
 </html>
